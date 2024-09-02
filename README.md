@@ -4,6 +4,13 @@
 
 This project focuses on calculating of hatched areas and visualizing camera coverage on a given floor plan using image processing techniques. The project is divided into two main parts:
 
+**Note**: There are numerous deep learning approaches that can achieve more accurate results compared
+to the traditional image processing methods demonstrated in this report for both hatched
+area detection and camera coverage visualization. Notable models include YOLOv8, Mask RCNN.
+There are also Models known as vision large language models such as Phi-3.5-Vision and
+MiniCPM-Llama3-V-2_5. These models can be Fine-tuned using new techniques like Low Rank
+Adapter (LoRA) or more advanced methods like QLoRA to optimize their performance for these specific task.
+
 1. **Hatched Area Calculation**: Identifies and calculates the area of hatched regions within an architectural layout using traditional image processing techniques like masking, thresholding, and morphological operations.
    
 2. **Camera Coverage Visualization**: Determines and visualizes the coverage areas of security cameras based on their specifications and positions. It uses edge detection to account for obstacles and renders the effective coverage areas of each camera.
