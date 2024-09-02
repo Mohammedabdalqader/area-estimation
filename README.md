@@ -39,6 +39,32 @@ Repository Structure
     assignment_report: A full ducometation of the solution of the tasks ( A PDF version of the Notebook)
 
 
+<h3>Image processing duraing Hatched Area Calculation</h3>
+
+<h5> Segment the image into two regions: foreground (hatch areas) and background.</h5>
+
+<p align="center">
+  <img src="area_calculation_image_processing/thresholded_image.jpg" alt="Step 1" width="600"/>
+</p>
+
+<h5> Applying Gaussian Blur to Reduce Noise and using canny edge detector to detect the edges of the hatched regions. </h5>
+
+<p align="center">
+  <img src="area_calculation_image_processing/dilated_edges.jpg" alt="Step 1" width="600"/>
+</p>
+
+<h5> Filling Hatched Regions Using Morphological Closing + Identifying and Filtering Connected Components. </h5>
+
+<p align="center">
+  <img src="area_calculation_image_processing/closed.jpg" alt="Step 1" width="600"/>
+</p>
+
+<h5> Removing Small White Regions (Noise) Using Morphological Opening. </h5>
+
+<p align="center">
+  <img src="area_calculation_image_processing/cleaned_image.jpg" alt="Step 1" width="600"/>
+</p>
+
 <h3>Overlay (All Cameras)</h3>
 <p align="center">
   <img src="overlay.jpg" alt="overlay" width="600"/>
