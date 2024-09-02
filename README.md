@@ -67,7 +67,7 @@ Repository Structure
 
 <h5> Estimated Hatched Area (in m2 - Real World) :  ~ 481.5 m2 </h5>
 
-Total hatched area in real world (m2): 481.42015389816146 m2
+
 <h3>Overlay (All Cameras)</h3>
 <p align="center">
   <img src="overlay.jpg" alt="overlay" width="600"/>
