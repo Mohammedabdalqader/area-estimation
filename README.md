@@ -41,7 +41,7 @@ Repository Structure
 
 <h3>Overlay (All Cameras)</h3>
 <p align="center">
-  <img src=overlay.jpg" alt="overlay" width="600"/>
+  <img src="overlay.jpg" alt="overlay" width="600"/>
 </p>
 
 <h3>Camera Coverage Area (All Cameras)</h3>
