@@ -18,7 +18,7 @@ Adapter (LoRA) or more advanced methods like QLoRA to optimize their performance
 
 ## Prerequisites
 
-To run the code in this project, you need the following software and libraries:
+To run the code, you need the following libraries:
 
 - Python 3.8 or later
 - Jupyter Notebook
@@ -32,7 +32,7 @@ To run the code in this project, you need the following software and libraries:
 1. **Clone the Repository**:
     ```bash
     git clone https://github.com/Mohammedabdalqader/hatched-area-calculation-camera-coverage-visualization.git
-    cd hatshed-area-calculation-camera-coverage-visualization
+    cd hatched-area-calculation-camera-coverage-visualization
     ```
 
 2. **Install Python Dependencies**:
@@ -44,6 +44,7 @@ Repository Structure
 
     hatched_area_calculation.ipynb: The main Jupyter notebook containing code for hatched area calculation and camera coverage visualization.
     camera_coverage_images/: Directory containing sample images used for processing and visualization.
+    area_calculation_image_processing/: Directory containing sample images of image pre-processing during hatched area calculation.
     assignment_report: A full ducometation of the solution of the tasks ( A PDF version of the Notebook)
 
 
