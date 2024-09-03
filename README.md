@@ -8,9 +8,17 @@ This project focuses on calculating of hatched areas and visualizing camera cove
    
 2. **Camera Coverage Visualization**: Determines and visualizes the coverage areas of security cameras based on their specifications and positions. It uses edge detection to account for obstacles and renders the effective coverage areas of each camera.
 
+**Note**: There are numerous deep learning approaches that can achieve more accurate results compared
+to the traditional image processing methods demonstrated in this report for both hatched
+area detection and camera coverage visualization. Notable models include YOLOv8, Mask RCNN.
+There are also Models known as vision large language models such as Phi-3.5-Vision and
+MiniCPM-Llama3-V-2_5. These models can be Fine-tuned using new techniques like Low Rank
+Adapter (LoRA) or more advanced methods like QLoRA to optimize their performance for these specific task.
+
+
 ## Prerequisites
 
-To run the code in this project, you need the following software and libraries:
+To run the code, you need the following libraries:
 
 - Python 3.8 or later
 - Jupyter Notebook
@@ -24,7 +32,7 @@ To run the code in this project, you need the following software and libraries:
 1. **Clone the Repository**:
     ```bash
     git clone https://github.com/Mohammedabdalqader/hatched-area-calculation-camera-coverage-visualization.git
-    cd hatshed-area-calculation-camera-coverage-visualization
+    cd hatched-area-calculation-camera-coverage-visualization
     ```
 
 2. **Install Python Dependencies**:
@@ -36,7 +44,37 @@ Repository Structure
 
     hatched_area_calculation.ipynb: The main Jupyter notebook containing code for hatched area calculation and camera coverage visualization.
     camera_coverage_images/: Directory containing sample images used for processing and visualization.
+    area_calculation_image_processing/: Directory containing sample images of image pre-processing during hatched area calculation.
     assignment_report: A full ducometation of the solution of the tasks ( A PDF version of the Notebook)
+
+
+<h3>Image processing duraing Hatched Area Calculation</h3>
+
+<h5> Segment the image into two regions: foreground (hatch areas) and background.</h5>
+
+<p align="center">
+  <img src="area_calculation_image_processing/thresholded_image.jpg" alt="Step 1" width="600"/>
+</p>
+
+<h5> Applying Gaussian Blur to Reduce Noise and using canny edge detector to detect the edges of the hatched regions. </h5>
+
+<p align="center">
+  <img src="area_calculation_image_processing/dilated_edges.jpg" alt="Step 1" width="600"/>
+</p>
+
+<h5> Filling Hatched Regions Using Morphological Closing + Identifying and Filtering Connected Components. </h5>
+
+<p align="center">
+  <img src="area_calculation_image_processing/closed.jpg" alt="Step 1" width="600"/>
+</p>
+
+<h5> Removing Small White Regions (Noise) Using Morphological Opening. </h5>
+
+<p align="center">
+  <img src="area_calculation_image_processing/cleaned_image.jpg" alt="Step 1" width="600"/>
+</p>
+
+<h5> Estimated Hatched Area (in m2 - Real World) :  ~ 481.5 m2 </h5>
 
 
 <h3>Overlay (All Cameras)</h3>
